@@ -3,3 +3,46 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.container,
+.frame,
+.displayArea,
+.inputArea,
+.inputArea div {
+    display: flex;
+}
+
+.container {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.frame {
+    height: 500px;
+    width: 400px;
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+.displayArea {
+    flex: 1;
+    align-items: center;
+    justify-content: end;
+    padding: 0px 16px;
+    font-weight: bold;
+}
+
+.inputArea {
+    flex: 4;
+    flex-wrap: wrap;
+    background-color: blanchedalmond;
+}
+
+.inputArea div {
+    justify-content: center;
+    align-items: center;
+    flex-basis: 96px;
+    font-weight: bold;
+    cursor: pointer;
+}

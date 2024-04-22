@@ -2,6 +2,9 @@ const add = (num1, num2) => num1 + num2;
 const subtract = (num1, num2) => num1 - num2;
 const multiply = (num1, num2) => num1 * num2;
 const divide = (num1, num2) => num1 / num2;
+const button = document.querySelector(".inputArea");
+const display = document.querySelector(".displayArea");
+let displayString = "";
 
 let firstNum = 0;
 let operator = "";
@@ -22,3 +25,15 @@ const operate = (num1, op, num2) => {
             return divide(num1, num2);
     }
 }
+
+button.addEventListener("click", element => {
+    if (element.target.className !== "inputArea") {
+        if (element.target.innerText === "Clear") {
+            displayString = "";
+            display.innerText = displayString;
+        } else {
+            displayString += element.target.innerText;
+            display.innerText = displayString;
+        }
+    }
+})
