@@ -72,7 +72,5 @@ button.addEventListener("click", element => {
                 }
             }
         }
-        //log every click
-        console.log("num1: " + num1 + "\nop: " + op + "\nnum2: " + num2);
     }
 });
