@@ -25,12 +25,18 @@
     border: 1px solid black;
 }
 
+.displayArea,
+.inputArea div {
+    font-weight: bold;
+    font-size: 18px;
+}
+
 .displayArea {
     flex: 1;
     align-items: center;
     justify-content: end;
     padding: 0px 16px;
-    font-weight: bold;
+    
 }
 
 .inputArea {
@@ -43,6 +49,5 @@
     justify-content: center;
     align-items: center;
     flex-basis: 96px;
-    font-weight: bold;
     cursor: pointer;
 }
