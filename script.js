@@ -36,7 +36,7 @@ button.addEventListener("click", element => {
         } else if (btn === "=") {
             if (num2 !== "") {
                 if (op === "/" && num2 === "0") {
-                    display.innerText = "jdon"
+                    display.innerText = "Can\'t divide by 0.";
                     num1 = "";
                     num2 = "";
                     op = "";
@@ -51,7 +51,7 @@ button.addEventListener("click", element => {
             if (isOp.test(btn)) {
                 if (num2 !== "") {
                     if (op === "/" && num2 === "0") {
-                        display.innerText = "jdon"
+                        display.innerText = "Can\'t divide by 0.";
                         num1 = "";
                         num2 = "";
                         op = "";
