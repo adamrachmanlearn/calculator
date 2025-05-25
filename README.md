@@ -1,2 +1,2 @@
-# calc
-Simple calculator made with HTML, CSS, and JavaScript.
+# Calculator
+Simple calculator program to practice html, css, and javascript
